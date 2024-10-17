@@ -6,16 +6,30 @@
     <title>alurabooks</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabeçalho">
+        <input type="checkbox" id="menu" class="container__botao">
+        <Iabel for="menu">
         <div class="container">
-        <span class="cabeçalho__menu-hamburguer"></span>
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+    </Iabel>
+    <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">programação</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-end</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Desing & UX</a></li>
+    </ul>
         <img src="img/Logo.svg" alt="logo da alura books" class="container__imagem">
     </div>
         <a href="#"><img src="img/Favorito.svg"> alt="meus favoritos" class="container__imagem"></a>
-        <a href="#"><img src="img/Compras.svg"> alt="carrinho de compras class="container__imagem"></a>
-        <a href="#"><img src="img/Usuario.svg"> alt="meu perfil class="container__imagem"></a>
+        <a href="#"><img src="img/Compras.svg"> alt="carrinho de compras" class="container__imagem"></a>
+        <a href="#"><img src="img/Usuario.svg"> alt="meu perfil" class="container__imagem"></a>
     </header>
 </body>
 </html>
