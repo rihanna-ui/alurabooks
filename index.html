@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alurabooks</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.nt/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="cabeçalho">
-        <input type="checkbox" id="menu" class="container__botao">
-        <Iabel for="menu">
         <div class="container">
+        <input type="checkbox" id="menu" class="container__botao">
+        <label for="menu">
         <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-    </Iabel>
+    </label>
     <ul class="lista-menu">
         <li class="lista-menu__titulo">Categorias</li>
         <li class="lista-menu__item"><a href="#" class="lista-menu__link">programação</a></li>
@@ -27,19 +30,22 @@
     </ul>
         <img src="img/Logo.svg" alt="logo da alura books" class="container__imagem">
     </div>
+
     <div class="container">
         <a href="#"><img src="img/Favorito.svg"> alt="meus favoritos" class="container__imagem"></a>
         <a href="#"><img src="img/Compras.svg"> alt="carrinho de compras" class="container__imagem"></a>
         <a href="#"><img src="img/Usuario.svg"> alt="meu perfil" class="container__imagem"></a>
     </div>
     </header>
+
     <section class="banner">
         <h2 class="banner__titulo">ja saber por onde começar?</h2>
         <p class="banner__texto">Encontre em nossa estante o que precisa para o seu desenvolvimeto!</p>
-        <input type="search" class="banner__pesquisa" placeholder="Qual sera sua proxima leitura">
+        <input type="search" class="banner__pesquisa" placeholder="Qual sera sua proxima leitura?">
     </section>
-    <section class="carrosel">
-        <h2 class="carrosel__titulo">Novos lamçamentos</h2>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lamçamentos</h2>
         <!--Slider main container-->
         <div class="swiper">
             <!--Additional requiered wrapper-->
@@ -51,12 +57,12 @@
                 <div class="swper-slide"><img src="img/Guia Front-end.svg" alt="Livro guia front end"></div>
                 <div class="swper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
                 <div class="swper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade"></div>
-
+</div>
                 <!--If we need navigation buttons-->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-        </div>
+            </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -64,10 +70,10 @@
         const swiper = new Swiper(".swiper",{
             spaceBetween:10,
             sliderPerView: 3,
-            pagination{
+            pagination: {
                 el:".swiper-pagination",
-                type: bullets,
-            }
+                type: "bullets",
+            },
         });
     </script>
 </body>
